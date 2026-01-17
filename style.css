@@ -35,7 +35,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1110px;
+    max-width: 1210px;
     margin: 0 auto;
     padding-top: 30px;
     
@@ -97,7 +97,7 @@ header{
   
 }
 .sponsor{
-    max-width: 1110px;
+    max-width: 1210px;
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 100px;
@@ -122,7 +122,7 @@ header{
     color: #3A3A3A;
 }
 .popular-container{
-  max-width: 1110px;
+  max-width: 1210px;
   margin: 0 auto;
   margin-bottom: 100px;
   
@@ -153,7 +153,50 @@ header{
 .star{
     color: #FB8200;
 }
+.footer-banner{
+    max-width: 1210px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 90px;
+}
+ .footer-content{
+     margin-left: 40px; 
+    justify-items: center;
+    align-items: center;
+    /* text-align: center; */
+} 
 
+/* Footer section */
+.footer{
+    margin: 0 auto;
+    margin-right: 0px;
+    /* margin-left: 100px; */
+    border-radius: 10px;
+    background-color: black;
+    padding: 30px;
+}
+.footer-text{
+    text-align: center;
+    color: aliceblue;
+}
+.footer-text h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #e6d8d8;
+}
+.footer-text{
+    font-size: 16px;
+    color: grey;
+}
+.footer-icon{
+    color: #646363;
+    text-align: center;
+    margin-top: 15px;
+    
+}
 
 
 /* mobile responsive style */
@@ -162,10 +205,16 @@ header{
     header{
         background: none;
     }
+    .logo{
+        margin-left: 10px;
+    }
+    .nav-links{
+        flex-wrap: wrap;
+    }
     .see{
         left: 0px;
     }
-    .navbar,#banner{
+    .navbar,#banner,.footer-banner{
         flex-direction: column;
     }
     .nav-links{
@@ -176,19 +225,28 @@ header{
         margin-left: 30px;
     }
     .banner-img img{
-        width: 100%;
+        width: 61%;
+        margin-top: 20px;
+        margin-right: 35px;
+        
     }
     .sponsor-img{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 30px;
         /* margin-left: 10px; */
     }
     .sponsor{
-        margin-left: 30px;
+        margin-left: 40px;
     }
     
     .popular-container {
         grid-template-columns: repeat(1,1fr);
         justify-items: center;
+    }
+    .footer-content{
+        margin-right: 20px;
+    }
+    .footer{
+        margin: 0 auto;
     }
 }
