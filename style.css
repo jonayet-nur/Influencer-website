@@ -20,14 +20,17 @@ body{
     left: 1010px;
 }
 
-header{
-    /* background-color: #FFF8F3; */
-    /* padding-top: 50px; */
-    background: url(Images/Circle\ design.svg);
+ header{
+     /* background-color: #FFF8F3;  */
+     /* padding-top: 50px;  */
+     background: url(Images/Circle\ design.svg);
+    /* background-size:contain; */
+    /* position: relative; */
+    /* background-position: center; */
     background-repeat: no-repeat;
-    background-position: 800px 120px;
+    background-position: 50rem 8rem;
     
-}
+}  
 
 
 
@@ -35,7 +38,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1210px;
+    width: 78%;
+    max-width: 1110px;
     margin: 0 auto;
     padding-top: 30px;
     
@@ -61,6 +65,7 @@ header{
 #banner{
     display: flex;
     padding-top: 80px;
+    width: 78%;
     max-width: 1110px;
     margin: 0 auto;
    
@@ -89,15 +94,15 @@ header{
     color: #ffff;
 }
 .banner-img img{
-    position: relative;
-  /* z-index: 2;  */
+  position: relative;
   max-width: 400px; 
-  left: 100px;
+  left: 5rem;
   vertical-align: middle;
   
 }
 .sponsor{
-    max-width: 1210px;
+    width: 78%;
+    max-width: 1110px;
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 100px;
@@ -122,7 +127,8 @@ header{
     color: #3A3A3A;
 }
 .popular-container{
-  max-width: 1210px;
+    width: 78%;
+  max-width: 1110px;
   margin: 0 auto;
   margin-bottom: 100px;
   
@@ -154,7 +160,8 @@ header{
     color: #FB8200;
 }
 .footer-banner{
-    max-width: 1210px;
+    width: 78%;
+    max-width: 1110px;
     margin: 0 auto;
     margin-bottom: 100px;
     display: flex;
@@ -171,8 +178,10 @@ header{
 
 /* Footer section */
 .footer{
+    width: 100%;
+    max-width:1640px ;
     margin: 0 auto;
-    margin-right: 0px;
+    /* margin-right: 0px; */
     /* margin-left: 100px; */
     border-radius: 10px;
     background-color: black;
@@ -203,7 +212,10 @@ header{
 @media screen and (max-width:576px){
 
     header{
-        background: none;
+        /* background-position: left 750px; */
+         background-size: 355px; 
+        background-position: left center ;
+        /* background: none; */
     }
     .logo{
         margin-left: 10px;
@@ -221,13 +233,29 @@ header{
         margin-left: 30px;
         margin-top: 20px;
     }
+    #banner{
+        flex-direction: column-reverse;
+    }
     .banner-content{
-        margin-left: 30px;
+        /* margin-bottom: 150px; */
+        margin-top: 150px; 
+        /* margin-left: 30px;  */
     }
     .banner-img img{
-        width: 61%;
-        margin-top: 20px;
-        margin-right: 35px;
+        width: 100%;
+        /* position: relative; */
+        /* right: 20px; */
+        top: 70px;
+        transform: translateX(-50px);
+        
+        
+        
+    }
+    .banner-img {
+        width: 268px;
+       
+        /* margin-top: 20px;
+        margin-right: 35px; */
         
     }
     .sponsor-img{
@@ -249,4 +277,5 @@ header{
     .footer{
         margin: 0 auto;
     }
+    
 }
